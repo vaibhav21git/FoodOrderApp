@@ -5,11 +5,11 @@ import classes from './Header.module.css'
 
 //since main-image so u cannot use dot
 
-function Header() {
+function Header(props) {
   return (<>
   <header className={classes.header}>
   <h1>ReactMeals</h1>
-  <Headercartbutton/>
+  <Headercartbutton onClick  = {props.onshowcart}/>
   </header>
   <div className= {classes['main-image']}>
     <img src = {mealsimg} alt ="A Table Full of Delicious Dishes" />
